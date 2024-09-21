@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/user-info.css">
+    <link rel="stylesheet" href="../style/answer_modal.css">
+    <title>User Info</title>
+</head>
+<>
+    <div class="form-container"> <!-- Новый контейнер -->
+        <div class="form-user-info">
+            <h1>Расскажите о себе</h1>
+
+            <div class="form-input-user-info">
+                <input type="text" placeholder="Укажите город в котором вы проживаете">
+                <input type="text" placeholder="Укажите свой возраст">
+                <input type="text" placeholder="Расскажите о своих интересах">  
+            </div>
+
+            <div class="button-holder">
+                <div class="cancel-button">
+                    <a href="" class="button">Отмена</a>
+                </div>
+                <div class="clear-button">
+                    <a href="" class="button">Очистить</a>
+                </div>
+                <div class="confirm-button">
+                    <button id="confirm-btn" class="button">Подтвердить</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ответ от сервера</h2>
+            <p id="server-response">Здесь будет ваш ответ.</p>
+            <button id="confirm">Подтвердить</button>
+            <button id="cancel">Отменить</button>
+        </div>
+    </div>
+    
+
+    <script src="../scripts/user-info.js"></script>
+    <script src="../scripts/answer_modal.js"></script>
+
+</body>
+
+</html>

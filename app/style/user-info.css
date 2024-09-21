@@ -1,0 +1,72 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-white-purple: #A1C9FF;
+    --color-white-gray: #7D7F8C;
+    --color-purole-2: #CAE3FC;
+    --color-border: #3267FF;
+}
+
+body {
+    background-image: url(../img/background_register.png);
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
+    margin: 0;             
+}
+
+.form-container {   
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    background-color: var(--color-white);  
+    border-radius: 20px;
+    border-width: 10px;                 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding: 40px;                         
+}
+
+.form-input-user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+input {
+
+    margin-top: 20px;                    
+    width: 100%;                         
+    max-width: 540px;                   
+    height: 56px;                       
+    border: 3px solid var(--color-border);
+    border-radius: 25px;                 
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color: var(--color-white-gray);
+}
+
+.button-holder {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.button {
+    background-color: var(--color-white-purple);
+    padding: 20px 92px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--color-white-purple);
+    color: var(--color-black);
+    text-decoration: none;
+    transition: color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
