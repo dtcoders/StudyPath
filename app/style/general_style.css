@@ -1,0 +1,399 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-white-purple: #A1C9FF;
+    --color-white-gray: #7D7F8C;
+    --color-purole-2: #CAE3FC;
+    --color-border: #3267FF;
+}
+
+
+
+/* header */
+
+.header {
+    background-color: #f8f8f8; /* Пример цвета фона */
+    padding: 10px 20px; /* Отступы по вертикали и горизонтали */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Центрует элементы по вертикали */
+}
+
+.logo {
+    margin-right: 20px; /* Отступ между логотипом и меню */
+}
+
+.menu-container {
+    flex-grow: 1; /* Заставляет контейнер меню занимать все доступное пространство */
+    display: flex;
+    justify-content: center; /* Центрирует меню по горизонтали */
+}
+
+.navigation_bar {
+    list-style: none; /* Убирает маркеры списка */
+    display: flex; /* Использует Flexbox для меню */
+    gap: 15px; /* Отступы между элементами меню */
+}
+
+.navigation_bar li {
+    display: inline; /* Отображение элементов в строку */
+}
+
+.navigation_bar a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: #333; /* Цвет текста */
+}
+
+
+/* general */
+
+
+.content_about {    
+    height: 1024px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat; /* Исправление: правильное свойство для запрета повторения фона */
+    background-size: cover; /* При необходимости растягивает изображение по размеру блока */
+    background-position: center; /* Центрует изображение */
+}
+
+
+.h1{
+    text-align: center;
+    padding-top: 333px;
+    font-size: 130px;
+}
+
+.site-description {
+    font-size: 24px;
+    background-color: var(--color-white);
+    padding: 50px;
+    border-radius: 20px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 90px;
+    margin-right: 80px;
+}
+    
+
+
+/*  test-content  */
+
+
+
+.content_test {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Красивый размытый shadow */
+    padding: 200px;
+    margin: 250px auto; /* Горизонтальное центрирование */
+}
+
+.content_test-text-button{
+    margin-top: 67px;
+}
+
+.take-the-test-btn{
+    background-color: var(--color-white-purple);
+    padding: 20px 92px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--color-white-purple);
+    color: var(--color-black);
+    text-decoration: none;
+    transition: color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.content_test-text-title{
+    color: var(--color-black);
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.content_test-text-desciption{
+    margin-top: 45px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+/* best university content */
+
+.best-universities_content-title{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name-university{
+    color: var(--color-black);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.number-of-students{
+    color: var(--color-white-gray);
+    font-size: 12px;
+}
+
+.rate-university{
+    color: var(--color-white-gray);
+    font-size: 11px;
+}
+
+.best-universities_content{
+    display: flex;
+    padding: 150px;
+    justify-content: space-between;
+}
+
+.details-btn {
+    background-color: var(--color-white-purple);
+    display: inline-flex; /* Не растягиваем кнопку */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; 
+    text-align: center;/* Центрируем текст по вертикали */
+    padding: 20px 92px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--color-white-purple);
+    color: var(--color-black);
+    text-decoration: none;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+
+
+
+
+/* education-stats-content */
+
+.education-stats-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+}
+
+.education-stats-content{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    background-color: var(--color-purole-2);
+    padding: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.education-stats-content-1{
+    text-align: center;
+}
+
+.education-stats-content-2{
+    text-align: center;
+}
+
+.education-stats-content-3{
+    text-align: center;
+}
+
+
+/* best-universities_content */
+
+.best-universities_content-1{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.best-study_centre_content-title{
+    font-size: 48px;
+    margin-top: 250px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.best-universities_content{
+    display: flex;
+    padding: 150px;
+    justify-content: space-between;
+}
+
+
+/* in-demand professions content */
+
+.professions-top{
+    margin-top: 250px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.in-demand-professions-carousel{
+    margin-top: 110px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    align-items: center; /* Центрирует содержимое по вертикали */
+    height: 100vh; /* Высота на весь экран */
+}
+
+.in-demand-professions-carousel {
+    display: flex;
+    overflow-x: auto; /* Позволяет горизонтальный скроллинг */
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* Эффект привязки при скролле */
+    gap: 10px; /* Пробел между карточками */
+    justify-content: center; /* Центрирует карточки */
+}
+
+.card {
+    flex: 0 0 200px; /* Задает фиксированную ширину карточек */
+    height: 150px; /* Высота карточки */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start; /* Привязка карточки при скролле */
+}
+
+.in-demand-professions-carousel::-webkit-scrollbar {
+    display: none; /* Скрыть скроллбар */
+}
+
+/* reviews from our users */
+
+.reviews-from-our-users-title {
+    font-size: 48px;
+    margin-top: 250px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.reviews-from-our-users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.reviews-from-our-users-registration {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.registration-form {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.registration-img {
+    flex: 0 0 100px;
+}
+
+.registration-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.registration-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* register form */
+
+.register{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 250px;
+    height: 1024px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-image: url(../img/register_background.png);
+}
+
+.register-title{
+    padding-top: 70px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.register-input-form{
+    margin-top: 200px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input{
+    margin-top: 40px;
+    width: 540px;
+    height: 76px;
+    border-color: var(--color-border);
+    border-radius: 25px;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+
+input::placeholder{
+    font-size: 20px;
+    color: var(--color-white-gray);
+}
+
+.register-btn{
+    margin-top: 80px;
+    text-align: center;
+    width: 100px;
+    margin-left: 260px;
+    background-color: var(--color-white-purple);
+    padding: 20px 92px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--color-white-purple);
+    color: var(--color-black);
+    text-decoration: none;
+    transition: color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+
+
+/* footer */
+
+
+.footer{
+    margin-top: 200px;
+    background-color: #183476;
+}
