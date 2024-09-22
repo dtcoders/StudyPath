@@ -34,17 +34,15 @@ function showModal(response) {
     const modal = document.getElementById('modal');
     const serverResponse = document.getElementById('server-response');
 
-    // Убедитесь, что вы правильно обращаетесь к свойству message
     serverResponse.textContent = response.message; 
     modal.style.display = 'block'; 
 }
 
-// Закрытие модального окна
 document.querySelector('.close').onclick = function() {
     document.getElementById('modal').style.display = 'none';
 };
 
-// Закрытие модального окна при клике вне его
+
 window.onclick = function(event) {
     const modal = document.getElementById('modal');
     if (event.target === modal) {

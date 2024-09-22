@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {   
     const formInputs = document.querySelectorAll('.form-input-user-info input');
     const confirmButton = document.querySelector('.confirm-button .button');
 
