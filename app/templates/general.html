@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/general_style.css"> <!-- Подключение стилей -->
+    <link rel="stylesheet" href="../style/general_style.css"> 
+    <link rel="stylesheet" href="../style/userinfo.css">
     <title>Учебный Путь</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
                 </select>
 
                 <div class="register-btn-container">
-                    <a href="" class="register-button">Зарегистрироваться</a>
+                    <a href="#registration" class="register-button">Зарегистрироваться</a>
                 </div>
 
             </div>
@@ -330,23 +331,15 @@
 
     <div class="register-content">
         <div class="register">
-
-
             <div class="register-form">
-
-
-                <div class="register-title">Регистрируйтесь чтобы пройти тест</div>
-
+                <div class="register-title" id="registration">Регистрируйтесь чтобы пройти тест</div>
                 <div class="register-input-form">
-                    <input type="email" placeholder="E-mail adress">
+                    <input type="email" placeholder="E-mail address">
                     <input type="password" placeholder="Password">
                     <input type="text" placeholder="Username">
-                    <a href="" class="register-btn">Зарегистрироваться</a>
+                    <a  href="../templates/user-info.html" class="register-btn">Зарегистрироваться</a>
                 </div>
-
-
             </div>
-
         </div>
     </div>
 
@@ -406,6 +399,8 @@
 
     </div>
 
+
+  
     
     <!-- Подключение скрипта -->
     <script src="../scripts/general_script.js"></script>
